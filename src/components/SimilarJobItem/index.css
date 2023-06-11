@@ -66,3 +66,7 @@
     height: 320px;
   }
 }
+
+.each-similar-job-item-navigation-link {
+  text-decoration: none;
+}

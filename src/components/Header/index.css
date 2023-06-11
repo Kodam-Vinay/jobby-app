@@ -33,6 +33,10 @@
 .header-nav-lg-container {
   display: none;
 }
+.each-nav-link-item {
+  cursor: pointer;
+  outline: none;
+}
 @media screen and (min-width: 768px) {
   .header-nav-container {
     display: none;

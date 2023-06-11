@@ -24,6 +24,8 @@
   border: 0;
   color: #ffffff;
   border-radius: 5px;
+  cursor: pointer;
+  outline: none;
 }
 @media screen and (min-width: 768px) {
   .home-bg-container {

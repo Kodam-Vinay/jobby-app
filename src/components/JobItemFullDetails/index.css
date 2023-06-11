@@ -98,6 +98,11 @@
   align-items: center;
   justify-content: space-between;
 }
+.job-item-full-details-company-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .job-item-full-details-company-info-description {
   margin-top: 0;
   color: #f1f5f9;
@@ -105,7 +110,11 @@
   font-weight: 500;
 }
 .life-at-company-image {
+  align-self: center;
   width: 100%;
+  max-height: 300px;
+  max-width: 500px;
+  border-radius: 10px;
 }
 
 .similar-jobs-heading {
@@ -128,4 +137,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .job-item-full-details-company-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .job-item-full-details-company-info-description {
+    margin-top: 0;
+    color: #f1f5f9;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .life-at-company-image {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    margin-left: 60px;
+  }
+  .job-item-full-details-description-head {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 30px;
+  }
 }

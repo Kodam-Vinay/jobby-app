@@ -7,6 +7,7 @@ import Jobs from './components/Jobs'
 import NotFound from './components/NotFound'
 import JobItemFullDetails from './components/JobItemFullDetails'
 import './App.css'
+// import SimilarJobItem from './components/SimilarJobItem'
 
 // These are the lists used in the application. You can move them to any component needed.
 // const employmentTypesList = [

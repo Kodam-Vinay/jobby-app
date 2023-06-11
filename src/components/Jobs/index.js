@@ -229,7 +229,7 @@ class Jobs extends Component {
         <button
           type="button"
           data-testid="searchButton"
-          className="search-button"
+          className="search-button each-nav-link-item"
           onClick={this.onPressSearchButton}
         >
           <BsSearch className="search-icon" />
@@ -244,14 +244,14 @@ class Jobs extends Component {
         <li className="checkbox-list-items" key={employ.employmentTypeId}>
           <input
             type="checkbox"
-            className="check-radio"
+            className="check-radio each-nav-link-item"
             id={employ.employmentTypeId}
             value={employ.employmentTypeId}
             onChange={this.onChangeEmployType}
           />
           <label
             htmlFor={employ.employmentTypeId}
-            className="filter-by-employ-checkbox-label"
+            className="filter-by-employ-checkbox-label each-nav-link-item"
           >
             {employ.label}
           </label>
@@ -266,7 +266,7 @@ class Jobs extends Component {
         <li className="checkbox-list-items" key={salary.salaryRangeId}>
           <input
             type="radio"
-            className="check-radio"
+            className="check-radio each-nav-link-item"
             id={salary.salaryRangeId}
             name="salary"
             onChange={this.onChangeSalary}
@@ -274,7 +274,7 @@ class Jobs extends Component {
           />
           <label
             htmlFor={salary.salaryRangeId}
-            className="filter-by-employ-checkbox-label"
+            className="filter-by-employ-checkbox-label each-nav-link-item"
           >
             {salary.label}
           </label>

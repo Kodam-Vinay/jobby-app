@@ -1,3 +1,4 @@
+// import {Link, Redirect} from 'react-router-dom'
 import {BsStarFill, BsBriefcaseFill} from 'react-icons/bs'
 import {MdLocationOn} from 'react-icons/md'
 import './index.css'
@@ -23,6 +24,7 @@ const SimilarJobItem = props => {
     rating,
     title,
   } = parsedData
+
   return (
     <li className="similar-job-item-list-item-container">
       <div className="similar-job-item-logo-and-info">
