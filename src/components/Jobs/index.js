@@ -290,6 +290,9 @@ class Jobs extends Component {
         <div className="jobs-background-container">
           <div className="jobs-section-bg-container">
             <div className="profile-filter-container">
+              <div className="input-search-sm-filter">
+                {this.FilterBySearch()}
+              </div>
               <Profile />
               <h1 className="salary-heading">Type of Employment</h1>
               {this.filterByEmployType()}
@@ -297,7 +300,9 @@ class Jobs extends Component {
               {this.filterBySalary()}
             </div>
             <div>
-              {this.FilterBySearch()}
+              <div className="input-search-lg-filter">
+                {this.FilterBySearch()}
+              </div>
               {this.renderResults()}
             </div>
           </div>

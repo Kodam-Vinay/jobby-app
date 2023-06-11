@@ -131,6 +131,13 @@
   margin-bottom: 2px;
   margin-top: 0;
 }
+
+.input-search-sm-filter {
+  display: block;
+}
+.input-search-lg-filter {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .jobs-section-bg-container {
     display: flex;
@@ -154,5 +161,11 @@
   }
   .filter-by-search-container {
     width: 350px;
+  }
+  .input-search-sm-filter {
+    display: none;
+  }
+  .input-search-lg-filter {
+    display: block;
   }
 }
