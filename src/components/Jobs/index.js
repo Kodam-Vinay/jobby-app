@@ -66,6 +66,10 @@ class Jobs extends Component {
     this.getJobDetailsList()
   }
 
+  onClickRetryButton = () => {
+    this.getJobDetailsList()
+  }
+
   getJobDetailsList = async () => {
     this.setState({apiStatus: constApiStatus.inProgress})
     const {searchInput, minSalary, employeeTypeList} = this.state
@@ -91,6 +95,8 @@ class Jobs extends Component {
         title: eachJob.title,
       }))
       this.setState({jobDetails: parsedData, apiStatus: constApiStatus.success})
+    } else {
+      this.setState({apiStatus: constApiStatus.failure})
     }
   }
 
@@ -125,10 +131,9 @@ class Jobs extends Component {
 
   renderSuccessView = () => {
     const {jobDetails} = this.state
-    const jobDetailsLength = jobDetails.length === 0
     return (
       <>
-        {jobDetailsLength ? (
+        {jobDetails.length === 0 ? (
           <div className="no-job-details-found-container">
             <img
               src="https://assets.ccbp.in/frontend/react-js/no-jobs-img.png"
@@ -137,8 +142,15 @@ class Jobs extends Component {
             />
             <h1 className="no-job-details-found-heading">No Jobs Found</h1>
             <p className="no-job-details-found-desc">
-              We could not find any jobs. Try other filters.
+              We could not find any jobs. Try other filters
             </p>
+            <button
+              type="button"
+              className="home-find-jobs-button"
+              onClick={this.onClickRetryButton}
+            >
+              Retry
+            </button>
           </div>
         ) : (
           <ul className="job-details-list-container">
