@@ -1,0 +1,78 @@
+.login-bg-container {
+  background-color: #000000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto';
+}
+.login-form-container {
+  min-height: 250px;
+  width: 300px;
+  background-color: #272727;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.login-each-input-element-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.login-form-logo {
+  height: 30px;
+  width: 80px;
+}
+.login-label-element {
+  width: 80%;
+  text-align: left;
+  color: #ffffff;
+  font-size: 14px;
+}
+.login-input-element {
+  margin-top: 5px;
+  height: 30px;
+  width: 80%;
+  background-color: transparent;
+  border: 1px solid #64748b;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  padding: 5px;
+  color: #f8fafc;
+}
+
+.login-submit-button {
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  height: 30px;
+  width: 80%;
+  margin-top: 15px;
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+.login-error-msg {
+  width: 80%;
+  margin-top: 0;
+  color: #ff0b37;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-form-container {
+    min-height: 340px;
+    width: 400px;
+  }
+  .login-form-logo {
+    height: 40px;
+    width: 100px;
+  }
+}
